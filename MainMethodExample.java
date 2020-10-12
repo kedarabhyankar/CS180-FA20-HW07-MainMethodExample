@@ -2,14 +2,14 @@ public class MainMethodExample {
   
   public static void main(String[] args){
     Student student = new Student("Kedar", 20, new String[]{"Computer Science"});
-    Course problemSolving = new Course("CS", 180, "Computer Science", "Buster Dunsmore", 4, null, "Problem Solving and Object-Oriented Programming");
-    Course discreteMath = new Course("CS", 182, "Computer Science", "Vernon Rego", 3, new Course[]{problemSolving}, "Foundations of Computer Science");
-    Course cProgramming = new Course("CS", 240, "Computer Science", "Voicu Popescu", 3, new Course[]{problemSolving}, "Programming in C");
-    Course arch = new Course("CS", 250, "Computer Science", "George Adams", 4, new Course[]{problemSolving, discreteMath, cProgramming}, "Computer Architecture");
-    Course dataStructures = new Course("CS", 251, "Computer Science", "Melanie Lotz", 3, new Course[]{problemSolving, discreteMath, cProgramming}, "Data Structures and Algorithms");
-    Course calcOne = new Course("MA", 161, "Mathematics", "Phillip Mummert", 5, null, "Calculus 1");
-    Course calcTwo = new Course("MA", 162, "Mathematics", "Joseph Chen", 5, new Course[]{calcOne}, "Calculus 2");
-    Course calcThree = new Course("MA", 261, "Mathematics", "Antonio Sa Baretto", 4, new Course[]{calcOne, calcTwo}, "Calculus 3"); 
+    Course problemSolving = new Course("CS", 180, "Computer Science", 4, null, "Problem Solving and Object-Oriented Programming");
+    Course discreteMath = new Course("CS", 182, "Computer Science", 3, new Course[]{problemSolving}, "Foundations of Computer Science");
+    Course cProgramming = new Course("CS", 240, "Computer Science", 3, new Course[]{problemSolving}, "Programming in C");
+    Course arch = new Course("CS", 250, "Computer Science", 4, new Course[]{problemSolving, discreteMath, cProgramming}, "Computer Architecture");
+    Course dataStructures = new Course("CS", 251, "Computer Science", 3, new Course[]{problemSolving, discreteMath, cProgramming}, "Data Structures and Algorithms");
+    Course calcOne = new Course("MA", 161, "Mathematics", 5, null, "Calculus 1");
+    Course calcTwo = new Course("MA", 162, "Mathematics", 5, new Course[]{calcOne}, "Calculus 2");
+    Course calcThree = new Course("MA", 261, "Mathematics", 4, new Course[]{calcOne, calcTwo}, "Calculus 3"); 
     
     int[][] geoTimeArray = new int[][]{{0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 1, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 1, 0, 0, 0, 0}, 
     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
